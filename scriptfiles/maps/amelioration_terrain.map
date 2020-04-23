@@ -1,0 +1,7 @@
+new g_Object[6];
+g_Object[0] = CreateObject(18849, -426.3576, 2197.6008, 48.6796, 0.0000, 0.0000, 0.0000); //
+g_Object[1] = CreateObject(1550, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000); //ContainerCrane_02
+g_Object[2] = CreateObject(3073, -759.9187, 2313.9060, 133.2313, 0.0000, 21.1000, 0.0000); //kmb_container_broke
+g_Object[3] = CreateObject(745, -761.4082, 2308.8437, 132.1629, 0.0000, -11.3999, -155.5000); //sm_scrub_rock5
+g_Object[4] = CreateObject(746, -810.2666, 2333.7861, 146.3070, 0.0000, -7.0999, 71.2999); //sm_scrub_rock2
+g_Object[5] = CreateObject(1550, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000); //

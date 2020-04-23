@@ -1,0 +1,2 @@
+SetPlayerCameraLookAt(playerid, 0.999285, 0.037710, -0.002679);
+SetPlayerCameraLookAt(playerid, 0.996550, 0.062232, -0.054901);

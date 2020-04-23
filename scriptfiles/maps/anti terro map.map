@@ -1,0 +1,447 @@
+new g_Object[55];
+new g_Vehicle[26];
+g_Object[0] = CreateObject(18849, -781.8350, 2405.5634, 163.2473, 0.0000, 0.0000, 0.0000); //no comment
+g_Object[1] = CreateObject(19380, 141.1246, 1916.0273, 24.1954, 0.0000, 77.6998, 0.0000); //wall028
+g_Object[2] = CreateObject(11730, 155.8141, 1917.6933, 17.7796, 0.0000, 0.0000, -88.6000); //GymLockerOpen1
+g_Object[3] = CreateObject(19380, 151.3414, 1916.0273, 24.1937, 0.0000, 102.4000, 0.0000); //wall028
+g_Object[4] = CreateObject(19380, 156.2357, 1916.0262, 17.9018, 0.0000, -179.9998, 0.8000); //wall028
+g_Object[5] = CreateObject(19380, 136.1134, 1916.0344, 17.9018, 0.0000, -179.9998, 0.6000); //wall028
+g_Object[6] = CreateObject(2915, 138.1352, 1911.5157, 17.9265, 0.0000, 0.0000, 0.0000); //kmb_dumbbell2
+g_Object[7] = CreateObject(11729, 155.8253, 1916.9344, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[8] = CreateObject(11729, 155.8403, 1916.2137, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[9] = CreateObject(11729, 155.8558, 1915.4730, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[10] = CreateObject(2628, 136.8665, 1913.8868, 17.8432, -1.2999, -1.2000, 92.6999); //gym_bench2
+g_Object[11] = CreateObject(11729, 155.8713, 1914.7423, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[12] = CreateObject(11730, 155.8838, 1914.0129, 17.7796, 0.0000, 0.0000, -89.0000); //GymLockerOpen1
+g_Object[13] = CreateObject(2631, 138.2292, 1912.1407, 17.8328, 1.8998, 0.0000, 0.0000); //gym_mat1
+g_Object[14] = CreateObject(2308, 149.4199, 1911.8741, 17.8257, 0.0000, -0.4999, 89.5999); //MED_OFFICE4_DESK_4
+g_Object[15] = CreateObject(2309, 149.7666, 1913.2209, 17.8073, 0.0000, 0.0000, 137.5001); //MED_OFFICE_CHAIR2
+g_Object[16] = CreateObject(2629, 139.2124, 1912.2780, 17.8607, 0.0000, 0.0000, -179.9996); //gym_bench1
+g_Object[17] = CreateObject(18849, -354.2005, 2250.0476, 48.7341, 0.0000, 0.0000, 0.0000); //no comment
+g_Object[18] = CreateObject(2915, 137.1853, 1911.5157, 17.9265, 0.0000, 0.0000, 0.0000); //kmb_dumbbell2
+g_Object[19] = CreateObject(19380, 141.1246, 1916.0273, 24.1954, 0.0000, 77.6997, 0.0000); //wall028
+g_Object[20] = CreateObject(11730, 155.8141, 1917.6933, 17.7796, 0.0000, 0.0000, -88.5999); //GymLockerOpen1
+g_Object[21] = CreateObject(19380, 151.3414, 1916.0273, 24.1937, 0.0000, 102.4000, 0.0000); //wall028
+g_Object[22] = CreateObject(19380, 156.2357, 1916.0262, 17.9018, 0.0000, -179.9998, 0.8000); //wall028
+g_Object[23] = CreateObject(19380, 136.1134, 1916.0344, 17.9018, 0.0000, -179.9998, 0.6000); //wall028
+g_Object[24] = CreateObject(2915, 138.1351, 1911.5157, 17.9265, 0.0000, 0.0000, 0.0000); //kmb_dumbbell2
+g_Object[25] = CreateObject(11729, 155.8253, 1916.9344, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[26] = CreateObject(11729, 155.8403, 1916.2137, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[27] = CreateObject(11729, 155.8558, 1915.4730, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[28] = CreateObject(2628, 136.8665, 1913.8868, 17.8432, -1.2999, -1.2000, 92.6998); //gym_bench2
+g_Object[29] = CreateObject(11729, 155.8713, 1914.7423, 17.7805, 0.0000, 0.0000, -88.8000); //GymLockerClosed1
+g_Object[30] = CreateObject(11730, 155.8838, 1914.0129, 17.7796, 0.0000, 0.0000, -89.0000); //GymLockerOpen1
+g_Object[31] = CreateObject(2631, 138.2292, 1912.1407, 17.8327, 1.8997, 0.0000, 0.0000); //gym_mat1
+g_Object[32] = CreateObject(2174, 151.3529, 1911.7307, 17.8276, 0.0000, 0.0000, 178.9998); //MED_OFFICE4_DESK_2
+g_Object[33] = CreateObject(2632, 138.2259, 1914.1307, 17.8922, 1.4997, 0.0000, 0.0000); //gym_mat02
+g_Object[34] = CreateObject(2629, 139.2124, 1912.2779, 17.8607, 0.0000, 0.0000, -179.9996); //gym_bench1
+g_Object[35] = CreateObject(2915, 137.1853, 1911.5157, 17.9265, 0.0000, 0.0000, 0.0000); //kmb_dumbbell2
+g_Object[36] = CreateObject(2913, 139.6571, 1911.7456, 18.7374, 0.1999, -89.8999, 0.1000); //kmb_bpress
+g_Object[37] = CreateObject(2308, 148.4105, 1915.7818, 17.8423, 0.0000, 0.0000, 0.0000); //MED_OFFICE4_DESK_4
+g_Object[38] = CreateObject(3066, 146.5292, 1915.3874, 18.8962, 0.0000, 0.0000, 1.5999); //ammotrn_obj
+g_Object[39] = CreateObject(2068, 145.7485, 1916.4364, 24.0209, 0.0000, 0.0000, 0.0000); //CJ_cammo_NET
+g_Object[40] = CreateObject(2356, 148.9705, 1914.4107, 17.8708, 0.0000, 0.0000, 91.8999); //police_OFF_CHAIR
+g_Object[41] = CreateObject(2605, 148.3896, 1914.3322, 18.2248, 0.0000, 0.0000, 91.0998); //POLCE_DESK1
+g_Object[42] = CreateObject(19942, 147.2326, 1919.3217, 20.5209, 0.0000, 0.0000, 89.0998); //PoliceRadio1
+g_Object[43] = CreateObject(2612, 153.7792, 1911.3078, 19.4902, 0.0000, 0.0000, -178.6999); //POLICE_NB2
+g_Object[44] = CreateObject(2615, 147.7940, 1918.6777, 19.4349, -7.9000, 178.6999, 93.1996); //POLICE_NB3
+g_Object[45] = CreateObject(19942, 147.2207, 1919.5063, 20.4507, 0.0000, 90.3999, 64.7996); //PoliceRadio1
+g_Object[46] = CreateObject(3630, 129.6291, 1939.2290, 19.7551, 0.0000, 0.0000, -179.6000); //crdboxes2_LAs
+g_Object[47] = CreateObject(3630, 139.1786, 1939.2957, 19.7551, 0.0000, 0.0000, -179.6000); //crdboxes2_LAs
+g_Object[48] = CreateObject(3014, 142.5623, 1913.6544, 19.5153, 0.0000, 0.0000, 1.7000); //cr_guncrate
+g_Object[49] = CreateObject(2358, 139.6302, 1912.0069, 18.7731, 0.0000, 0.0000, -179.0000); //AMMO_BOX_c2
+g_Object[50] = CreateObject(3576, 143.7698, 1913.0434, 19.2877, 0.0000, 3.2000, -87.0000); //DockCrates2_LA
+g_Object[51] = CreateObject(356, 143.7812, 1914.8792, 18.2894, 83.0000, -167.6000, 136.8000); //m4
+g_Object[52] = CreateObject(2043, 143.6902, 1914.3524, 18.3787, 0.0000, 0.0000, 93.5000); //AMMO_BOX_M4
+g_Object[53] = CreateObject(356, 144.4761, 1914.8322, 18.2730, 83.0000, -167.6000, 136.8000); //m4
+g_Object[54] = CreateObject(2614, 156.0928, 1915.7564, 21.2904, 0.0000, 0.0000, -89.8000); //CJ_US_FLAG
+g_Vehicle[0] = CreateVehicle(470, 140.9518, 1923.6104, 19.1842, 83.2322, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+ChangeVehiclePaintjob(g_Vehicle[0], 0);
+g_Vehicle[1] = CreateVehicle(470, 133.2068, 1925.4776, 19.2223, 91.2841, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+ChangeVehiclePaintjob(g_Vehicle[1], 0);
+g_Vehicle[2] = CreateVehicle(470, 124.8468, 1907.8118, 18.6877, 93.9107, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+ChangeVehiclePaintjob(g_Vehicle[2], 0);
+g_Vehicle[3] = CreateVehicle(470, 124.7497, 1900.3262, 18.4930, 90.1286, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+ChangeVehiclePaintjob(g_Vehicle[3], 0);
+g_Vehicle[4] = CreateVehicle(470, -482.8479, 2242.1645, 48.0666, 329.7956, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+ChangeVehiclePaintjob(g_Vehicle[4], 0);
+g_Vehicle[5] = CreateVehicle(470, -683.0770, 2449.9836, 116.2391, 329.7956, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+ChangeVehiclePaintjob(g_Vehicle[5], 0);
+g_Vehicle[6] = CreateVehicle(470, -1327.6494, 2683.4350, 50.0625, 288.2886, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+ChangeVehiclePaintjob(g_Vehicle[6], 0);
+g_Vehicle[7] = CreateVehicle(470, -1325.6549, 2677.0820, 50.0625, 288.7405, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+ChangeVehiclePaintjob(g_Vehicle[7], 0);
+g_Vehicle[8] = CreateVehicle(470, -1296.2375, 2704.7768, 50.0625, 212.1775, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+ChangeVehiclePaintjob(g_Vehicle[8], 0);
+g_Vehicle[9] = CreateVehicle(470, -1274.3459, 2706.5488, 50.0625, 209.4664, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+ChangeVehiclePaintjob(g_Vehicle[9], 0);
+g_Vehicle[10] = CreateVehicle(470, -1268.5688, 2709.3759, 50.0702, 211.5561, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+ChangeVehiclePaintjob(g_Vehicle[10], 0);
+g_Vehicle[11] = CreateVehicle(433, -1324.3067, 2698.2851, 50.0625, 293.0064, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+ChangeVehiclePaintjob(g_Vehicle[11], 0);
+g_Vehicle[12] = CreateVehicle(487, -1337.6374, 2671.3457, 50.0625, 20.7583, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+ChangeVehiclePaintjob(g_Vehicle[12], 0);
+g_Vehicle[13] = CreateVehicle(470, 148.6754, 1933.6029, 19.0578, 83.7418, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+ChangeVehiclePaintjob(g_Vehicle[13], 0);
+g_Vehicle[14] = CreateVehicle(470, 137.3397, 1926.5931, 19.5752, 69.5060, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+ChangeVehiclePaintjob(g_Vehicle[14], 0);
+g_Vehicle[15] = CreateVehicle(470, 121.2297, 1904.9328, 18.6933, 22.8776, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+ChangeVehiclePaintjob(g_Vehicle[15], 0);
+g_Vehicle[16] = CreateVehicle(470, 125.0261, 1900.4750, 19.9755, 91.6557, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+ChangeVehiclePaintjob(g_Vehicle[16], 0);
+g_Vehicle[17] = CreateVehicle(470, -482.8479, 2242.1645, 48.0666, 329.7955, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+ChangeVehiclePaintjob(g_Vehicle[17], 0);
+g_Vehicle[18] = CreateVehicle(470, -683.0770, 2449.9836, 116.2390, 329.7955, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+ChangeVehiclePaintjob(g_Vehicle[18], 0);
+g_Vehicle[19] = CreateVehicle(470, -1327.6494, 2683.4350, 50.0625, 288.2886, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+ChangeVehiclePaintjob(g_Vehicle[19], 0);
+g_Vehicle[20] = CreateVehicle(470, -1325.6549, 2677.0820, 50.0625, 288.7405, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+ChangeVehiclePaintjob(g_Vehicle[20], 0);
+g_Vehicle[21] = CreateVehicle(470, -1296.2375, 2704.7768, 50.0625, 212.1775, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+ChangeVehiclePaintjob(g_Vehicle[21], 0);
+g_Vehicle[22] = CreateVehicle(470, -1274.3459, 2706.5488, 50.0625, 209.4664, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+ChangeVehiclePaintjob(g_Vehicle[22], 0);
+g_Vehicle[23] = CreateVehicle(470, -1268.5688, 2709.3759, 50.0702, 211.5561, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+ChangeVehiclePaintjob(g_Vehicle[23], 0);
+g_Vehicle[24] = CreateVehicle(433, -1324.3066, 2698.2851, 50.0625, 293.0064, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+ChangeVehiclePaintjob(g_Vehicle[24], 0);
+g_Vehicle[25] = CreateVehicle(487, -1337.6374, 2671.3457, 50.0625, 20.7583, 0, 0, -1); //no comment
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
+ChangeVehiclePaintjob(g_Vehicle[25], 0);
